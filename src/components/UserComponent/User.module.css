@@ -1,0 +1,61 @@
+.form-container {
+    background-color: #FFF;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    margin: 1rem;
+    width: 45%;
+    min-width: 300px;
+}
+@media (max-width:768px) {
+    .form-container{
+        width: 100%;
+    }
+}
+.form-container .username,
+.form-container .age{
+    margin: 0% 2% 2% 0;
+}
+.username label,
+.age label{
+    margin-bottom: 1%;
+    font-weight:700;
+}
+
+.form-container label,
+.form-container input{
+    display: block;
+    width: 100%;
+    
+}
+.form-container input{
+    border-style: none;
+    border: 2px solid #ccc;
+    height:30px;
+}
+
+.form-container input:focus{
+    outline: 0;
+    border: 2px solid #71667d;
+}
+
+.button {
+    background-color: #5d18a8;
+    border: 0;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100%;
+  }
+  .button:hover,
+  .button:focus {
+    cursor: pointer;
+  }
+  @media (min-width: 768px) {
+    .button {
+      width: auto;
+    }
+  }
+
+  
