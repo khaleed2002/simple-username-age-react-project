@@ -6,17 +6,7 @@ import Warning from "./components/Warning/Warning";
 function App() {
   const [isValidUsername, updateIsValidUsername] = useState(true);
   const [isValidAge, updateIsValidAge] = useState(true);
-  const dumbUsers = [
-    {
-      username: "khaled",
-      age: 20,
-    },
-    {
-      username: "ahmed",
-      age: 21,
-    },
-  ];
-  const [users, updateUsers] = useState(dumbUsers);
+  const [users, updateUsers] = useState('');
   const onAddUser = (user) => {
     if (user.username==='' || user.age==='') {
       updateIsValidUsername(false);
