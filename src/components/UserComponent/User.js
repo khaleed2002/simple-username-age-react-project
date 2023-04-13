@@ -14,7 +14,7 @@ const User = (props) => {
     setUsername(event.target.value);
   }
   const ageHandler = (event)=>{
-    setAge(event.target.value);
+    setAge(parseInt(event.target.value));
   }
   return (
     <Card>
