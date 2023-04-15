@@ -27,9 +27,9 @@ function App() {
   }
   let warning ='';
   if(!isValidUsername){
-    warning= <Warning message="Please enter a valid name and age (non-empty values)." closeWarning={closeWarningHandler}/>
+    warning= <Warning error='Invalid input' message="Please enter a valid name and age (non-empty values)." closeWarning={closeWarningHandler}/>
   } else if (!isValidAge){
-    warning= <Warning message="Please enter a valid age (>0)." closeWarning={closeWarningHandler}/>
+    warning= <Warning error='Invalid Age' message="Please enter a valid age (>0)." closeWarning={closeWarningHandler}/>
   } else{
     warning =''
   }
